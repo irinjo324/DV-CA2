@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irin | Portfolio Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- My stylesheet-->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/3ea667e0d0.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-main">
+
+  <!-- Navbar -->
+  <!-- Ref: https://getbootstrap.com/docs/5.3/components/navbar/ -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top" id="#navbar-main">
+      <div class="container">
+          <a href="#" class="navbar-brand fw-bold">Irin.</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a href="#about" class="nav-link">About</a>
+                  </li>
+                  <!-- Education Dropdown -->
+                  <!--Ref: https://getbootstrap.com/docs/5.3/components/dropdowns/ -->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="educationDropdown" role="button" data-bs-toggle="dropdown">Education</a>
+                      <ul class="dropdown-menu" aria-labelledby="educationDropdown">
+                          <li><a class="dropdown-item" href="#education">Grades</a></li> 
+                          <li><a class="dropdown-item" href="#skills">Skills</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#experience" class="nav-link">Work Experience</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#projects" class="nav-link">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#contact" class="nav-link">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+    <!--Hero-->
+     <div class="container py-5">
+        <div class="row mt-5 align-items-center">
+
+          <!--Icons-->
+          <div class="hero-section col-12 col-sm-2 col-md-1 text-center mb-4">
+            <div class="d-flex d-sm-block justify-content-center gap-4">
+              <a href="https://www.linkedin.com/in/irin-joshi/" target="_blank">
+                <i class="fab fa-linkedin d-block mb-3"></i>
+              </a>
+              <a href="https://github.com/irinjo324/" target="_blank">
+                <i class="fab fa-github d-block mb-3"></i>
+              </a>
+              <a href="https://x.com/" target="_blank">
+                <i class="fab fa-square-x-twitter d-block mb-3"></i>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram d-block"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-5 pt-4 text-center text-md-start">
+            <h3 class="mb-3">Hello, I'm</h3>
+            <h1 class="mb-3">Irin Joshi</h1>
+            <h4 class="mb-3">Computing with AI/ML</h4>
+            <p>I am passionate about turning data into meaningful solutions. I build projects in data analytics and web development.</p>
+            <a href="files/Irin_Joshi_CV.pdf" download target="_blank" class="button btn btn-md">Download CV</a>
+          </div>
+          <div class="col-12 col-md-6 text-center mt-4">
+            <img src="images/hero.jpeg" alt="Hero" class="img-fluid hero-img" style="max-height: 500px;">
+          </div>
+
+        </div>
+      </div>
+   
+
+    <!--About-->
+    <section class="py-5" id="about">
+        <div class="container d-flex justify-content-center">
+          <!--Ref: https://getbootstrap.com/docs/5.3/components/card/ -->
+          <div class="card shadow-sm p-4 border-0 rounded" style="max-width: 900px; width: 100%;">
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <h3>About</h3>
+                    <p>I'm a final year Computing with AI and Machine Learning student at Technological University Dublin. I enjoy exploring the intersection of machine learning, software development and data-driven innovation. I have worked in fast-paced 
+                       environments through academic projects and internship experience. My journey in tech is shaped by curiosity - I love breaking down complex problems, building practical projects and continuously learning new tools and technologies.</p>
+                    <p>This portfolio highlights my journey, showcases the work I'm proud of and gives you a closer look at the kind of data professional I'm striving to become.</p>
+                </div> 
+            </div>
+          </div>  
+        </div>
+    </section>
+    
+    <!--Education-->
+    <section class="py-5" id="education">
+        <div class="container d-flex justify-content-center">
+          <div class="card shadow-sm p-4 border-0 rounded" style="max-width: 900px; width: 100%;">
+            <div class="row align-items-center mb-4">
+                <div class="col-md-8">
+                    <h3>Education</h3>
+                    <p>Technological University Dublin or TU Dublin was officially established in 2019 through the unification of three long-standing institutions: Dublin Institute of Technology, Institute of Technology, Blanchardstown and Institute of Technology, Tallaght. Together, they 
+                        formed Ireland's first technological university, known for its strong focus on innovation, practical learning and industry-aligned education.
+                    </p>
+                    <p>I commenced my journey at TU Dublin in September 2022.</p>
+                  </div>
+                <div class="col-md-4 text-center">
+                  <a href="https://www.tudublin.ie/" target="_blank">
+                    <img src="images/tu-dublin.png" alt="TUD logo" class="img-fluid rounded" style="max-width: 270px;">
+                  </a>  
+                </div>
+            </div>
+
+            <!--grades-->
+            <h3>Grades</h3>
+            <div class="accordion mb-5" id="educationAccordion">
+
+              <!--accordion-->
+              <!-- Ref: https://getbootstrap.com/docs/5.3/components/accordion/ -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Year 4
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#educationAccordion">
+                  <div class="accordion-body">
+                    <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Module Name</th>
+                                          <th scope="col">Credits</th>                              
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>Applied Machine Learning</td>
+                                          <td>5</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Computational Linguistics</td>
+                                          <td>5</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Data Analysis & Programming</td>
+                                          <td>5</td>
+                                        </tr>
+                                        <tr>
+                                          <td>DevOps</td>
+                                          <td>5</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Interactive Design & Visualisation</td>
+                                          <td>5</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Applied AI & Deep Learning</td>
+                                          <td>5</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Information Management</td>
+                                          <td>5</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Social Media Analysis</td>
+                                          <td>5</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Operations Research</td>
+                                          <td>5</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Data Analytics Project</td>
+                                          <td>10</td>
+                                        </tr>
+                                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Year 3
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#educationAccordion">
+                  <div class="accordion-body">
+                    <table class="table">
+                                            <thead>
+                                                <tr>
+                                                <th scope="col">Module Name</th>
+                                                <th scope="col">Grade</th>                              
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                <td>Big Data Technologies</td>
+                                                <td>B+</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Cloud Services & Distributed Computing</td>
+                                                <td>B</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Data Analysis</td>
+                                                <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Innovation & Entrepreneurship</td>
+                                                <td>B+</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Operating Systems</td>
+                                                <td>B</td>
+                                                </tr>
+                                                <tr>
+                                                <td>Server-side Wed Development</td>
+                                                <td>B</td>
+                                                </tr>
+                                            </tbody>
+                      </table> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Year 2
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#educationAccordion">
+                  <div class="accordion-body">
+                    <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Module Name</th>
+                                          <th scope="col">Grade</th>                              
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>Advanced Database Technologies</td>
+                                          <td>B+</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Discrete Mathematics 2</td>
+                                          <td>A</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Network Fundementals</td>
+                                          <td>B+</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Software Quality Assurance & Testing</td>
+                                          <td>B</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Software Development 3</td>
+                                          <td>B</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Client-side Wed Development</td>
+                                          <td>A</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Database Administration & Analysis</td>
+                                          <td>B+</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Management Science</td>
+                                          <td>B+</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Routing & Switching Essentials</td>
+                                          <td>A</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Project</td>
+                                          <td>B+</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Information Security</td>
+                                          <td>B+</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Software Development 4</td>
+                                          <td>C+</td>
+                                        </tr>
+                                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Year 1
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#educationAccordion">
+                  <div class="accordion-body">
+                    <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Module Name</th>
+                                          <th scope="col">Grade</th>                              
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>Database Fundamentals</td>
+                                          <td>B</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Operating Systems Fundamentals</td>
+                                          <td>A</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Social Media Communications</td>
+                                          <td>A</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Software Development 2</td>
+                                          <td>B</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Statistics</td>
+                                          <td>A</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Systems Analysis</td>
+                                          <td>A</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Business & Information Systems</td>
+                                          <td>A</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Computer Architecture</td>
+                                          <td>B+</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Critical Skills Development</td>
+                                          <td>A</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Discrete Mathematics 1</td>
+                                          <td>A</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Software Development 1</td>
+                                          <td>C+</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Visual Design & User Experience</td>
+                                          <td>B+</td>
+                                        </tr>
+                                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!--skills-->
+            <h3>Skills</h3>
+                    <div class="skills" id="skills">
+                        <p>Data Engineering & Analytics</p>
+                            <!-- progress bars -->
+                            <!-- Ref: https://getbootstrap.com/docs/5.3/components/progress/ -->
+                            <div class="progress mb-4">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" style="width: 90%" aria-valuemin="0" aria-valuemax="100">90%</div>
+                            </div>    
+                        <p>Software Development</p>
+                            <div class="progress mb-4">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" style="width: 85%" aria-valuemin="0" aria-valuemax="100">85%</div>
+                            </div>     
+                        <p>Web Design</p>
+                            <div class="progress mb-4">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" style="width: 80%" aria-valuemin="0" aria-valuemax="100">80%</div>
+                            </div>        
+                        <p>DevOps</p>
+                            <div class="progress mb-4">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" style="width: 80%" aria-valuemin="0" aria-valuemax="100">80%</div>
+                            </div>     
+                        <p>Databases</p>
+                            <div class="progress mb-4">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" style="width: 75%" aria-valuemin="0" aria-valuemax="100">75%</div>
+                            </div>
+                    </div>        
+          </div>
+        </div>
+    </section>              
+
+        <!--Work experience-->
+        <section class="py-5" id="experience">
+                <div class="container d-flex justify-content-center">
+                  <div class="card shadow-sm p-4 border-0 rounded" style="max-width: 900px; width: 100%;">
+                    <div class="row align-items-center mb-4">
+                        <div class="col-md-8">
+                            <h3>Work Experience</h3>
+                            <h5 class="fw-bold mt-3">Data Engineer Intern</h5>
+                            <p>
+                              Completed a seven month work placement at Fidelity Investments as a Data Engineer Intern. Fidelity is a multinational financial services corporation and is one of the
+                              largest asset managers globally. The service offerings includes retirement planning, wealth, brokerage, insurance, technology solutions and many more.</p> 
+                            <p>
+                              During my time at Fidelity, I developed and optimized backend services as part of the 
+                              Business Metrics Data Lake squad, improving access to strategic data for decision-making.</p>
+                            <button type="button" class="button btn" data-bs-toggle="modal" data-bs-target="#fidModal" style="max-width: 110px;">Read more</button>
+                        </div>
+                        <div class="col-md-4 text-center">
+                          <a href="https://jobs.fidelity.com/ie/" target="_blank">
+                              <img src="images/fid-logo.png" alt="TUD logo" class="img-fluid rounded" style="max-width: 270px;">
+                          </a>    
+                        </div>
+                    </div>
+                  </div> 
+
+        <!--Modal for work experience-->
+        <!-- Ref: https://getbootstrap.com/docs/5.3/components/modal/#how-it-works -->
+        <div class="modal fade" id="fidModal" >
+          <div class="modal-dialog modal-dialog-centered modal-md">  
+            <div class="modal-content">
+              <div class="modal-header">
+                <p><b>Data Engineer Intern</b></p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--Ref: https://getbootstrap.com/docs/5.3/components/close-button/ -->
+              </div>
+              <div class="modal-body">
+                <p>I worked at Fidelity's Dublin office from January 2025 to August 2025. I gained hands-on experience with a number of tools and technologies during my internship:</p>
+                <ul>
+                  <li>SQL</li>
+                  <li>Python</li>
+                  <li>Snowflake</li>
+                  <li>Jenkins</li>
+                  <li>Apache Nifi</li>
+                  <li>Control-M</li> 
+                  <li>PowerBI</li>
+                  <li>Tableau</li>      
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <!--Projects-->
+    <section class="py-5" id="projects">
+          <div class="container d-flex justify-content-center">
+            <div class="card shadow-sm p-4 border-0 rounded" style="max-width: 900px; width: 100%;">
+              <h3 class="mb-4">Projects</h3>
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card shadow-sm p-3 border-0 rounded h-100">
+                    <div class="text-center mb-3">
+                      <img src="images/intake-form.png" alt="EITR intake form" class="img-fluid" style="max-width: 250px;">
+                    </div>
+                    <h5 class="fw-bold">Web Intake Form</h5>
+                    <p>A Flask-based web intake form developed as part of my internship project.</p>
+                    <button type="button" class="button btn" data-bs-toggle="modal" data-bs-target="#eitrModal" style="max-width: 110px;">Read more</button>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm p-3 border-0 rounded h-100">
+                    <div class="text-center mb-4">
+                      <img src="images/spice-garden.png" alt="website homepage" class="img-fluid"  style="max-width: 250px;">
+                    </div>
+                    <h5 class="fw-bold">Restaurant Web App</h5>
+                    <p>A Django-based web application developed for my university 2nd year project.</p>
+                    <button type="button" class="button btn" data-bs-toggle="modal" data-bs-target="#spiceModal" style="max-width: 110px;">Read more</button>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+
+      <!--Modal for projects-->
+      <!-- Ref: https://getbootstrap.com/docs/5.3/components/modal/#how-it-works -->
+      <div class="modal fade" id="eitrModal" >
+          <div class="modal-dialog modal-dialog-centered modal-md">  
+            <div class="modal-content">
+              <div class="modal-header">
+                <p><b>Web Intake Form</b></p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>This project was completed for Elephant in the Room, an Irish non-profit focused on mental health awareness in schools and workplaces. I developed a user-friendly web intake form that streamlined their school 
+                  onboarding process with a simpler digital workflow. Teck stack used:</p>
+                <ul>
+                  <li>FLASK</li>
+                  <li>Python</li>
+                  <li>HTML</li> 
+                  <li>CSS</li>  
+                  <li>JavaScript</li> 
+                </ul>
+                <p><a href="https://irinjo324.github.io/Web-Intake-Form/" target="_blank" class="proj">View Project</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="spiceModal" >
+          <div class="modal-dialog modal-dialog-centered modal-md">  
+            <div class="modal-content">
+              <div class="modal-header">
+                <p><b>Restaurant Web App</b></p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>This full-stack app was developed for my 2nd year project. Functionalities includes user authentication, reservations, menu exploration, shopping cart and other essential e-commerce features. Tech stack used:</p>
+                <ul>
+                  <li>Django</li>
+                  <li>Python</li>
+                  <li>SQLite</li> 
+                  <li>Bootstrap</li>  
+                  <li>HTML</li> 
+                </ul>
+                <p><a href="https://spicegarden.pythonanywhere.com/" target="_blank" class="proj">View Project</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>  
+
+    <!-- Contact-->
+    <section id="contact" class="py-5">
+            <div class="container d-flex justify-content-center">
+              <div class="card shadow-sm p-4 border-0 rounded" style="max-width: 900px; width: 100%;">
+                <h3 class="mb-4">Contact</h3>
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6>My contact details</h6>
+                    <br>
+                    <!--Ref: https://getbootstrap.com/docs/5.3/components/list-group/ -->
+                    <ul class="list-group mb-4">
+                      <li class="list-group-item contact-header">Email</li>
+                      <li class="list-group-item"><i class="fa-solid fa-envelope"></i> joshiirin@gmail.com</li>
+                    </ul>
+                    <ul class="list-group mb-4">
+                      <li class="list-group-item contact-header">Phone Number</li>
+                      <li class="list-group-item"><i class="fa-solid fa-phone"></i> 089 487 1826</li>
+                    </ul>
+                    <ul class="list-group mb-4">
+                      <li class="list-group-item contact-header">Location</li>
+                      <li class="list-group-item"><i class="fa-solid fa-location-dot"></i> Clondalkin, Co. Dublin</li>
+                    </ul>
+                  </div>
+
+                  <!--Contact Form-->
+                  <div class="col-md-8">
+                    <h6>Send me a message</h6>
+                    <br>
+                    <form>
+                      <div class="mb-3">
+                        <label for="name" class="fw-bold form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="email" class="fw-bold form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="message" class="fw-bold form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Write your message here.." required></textarea>
+                      </div>
+                      <button type="submit" class="button btn px-4" onclick="messageSent()">Submit</button>
+                    </form>
+
+                    <!--Success JS message-->
+                    <div id="successEmail" style="display: none;">
+                      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </symbol>
+                      </svg>
+                      <div class="alert alert-success alert-dismissible fade show d-flex align-items-center mt-3" role="alert">
+                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                        <div>
+                          <h4 class="alert-heading">Email sent!</h4>
+                          <p>I will be in touch shortly</p>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!--Google map-->
+                <div class="mt-5">
+                  <h6>Find me on Google Maps</h6>
+                  <br>
+                  <div class="map-container" style="border-radius: 10px; overflow: hidden;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9533.908126448126!2d-6.429087071791719!3d53.316811604640144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867737042146759%3A0x7858b0b546d31acb!2sAsh%20Grv%2C%20Kilcarbery%2C%20Dublin%2022%2C%20D22%20TH7P!5e0!3m2!1sen!2sie!4v1765302288543!5m2!1sen!2sie" 
+                      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+    </section>
+
+          
+    <footer class="footer">
+      <b>Site Designed by Irin Joshi 2025</b>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- My JavaScript file -->
+    <script src="scripts/myScripts.js"></script> 
+
+</body>
+</html>

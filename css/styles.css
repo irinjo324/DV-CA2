@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+}
+
+/* headings */
+h1{font-weight: 700;}
+h3{color: #49796B;}
+h4{font-weight: 600;}
+
+/* navbar */
+.fixed-top{
+    background-color: #49796B !important;
+    max-height: 3.5rem !important;
+}
+
+.navbar .nav-link.active {
+    color: #f9f2f2 !important;
+    border-bottom: 2px solid #f9f2f2;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #f9f2f2;
+}
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:active {
+    color: #f9f2f2;
+}
+
+.nav-link{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f9f2f2 !important;
+    padding-top: 1rem;
+}
+
+.navbar-nav{
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    text-align: right;
+}
+
+.nav-link:hover{
+    border-bottom: 1px solid #f9f2f2;
+}
+
+.dropdown-item:active,
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #49796B !important;
+  color: white;
+}
+
+/* Hero */
+.hero-img {
+    max-width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0);
+}
+
+.hero-section i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-section i:hover {
+    color: #49796B;
+    transform: scale(1.2);
+}
+
+.hero-section a {
+    text-decoration: none !important;
+}
+
+.hero-section a i {
+    color: #000;
+}
+
+/* skills */
+.progress-bar{
+    background-color: #49796B;
+    color: #f9f2f2;
+}
+
+/* projects */
+.proj {
+    color: #49796B;
+}
+
+/* buttons */
+.button{
+    background-color: #49796B;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: #3f6a5c;
+    color: white;             
+}
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #49796B;
+    border-color: #49796B;
+}
+
+.read-more{
+    background-color: #49796B;
+}
+
+/* contact form */
+.form-control:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #49796B;
+    border-color: #49796B; 
+}
+
+.contact-header {
+  background-color: #f8f9fa !important;
+  color: #49796B !important;
+  font-weight: bold;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #f8f9fa;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.footer b {
+    font-weight: 600;
+}
